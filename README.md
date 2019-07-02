@@ -8,5 +8,3 @@ iOS / Android Movie Discovery App built with React Native
 - [ ] TV Shows
 - [ ] Search
 - [ ] Detail
-
-- [x] Test
