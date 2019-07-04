@@ -14,5 +14,5 @@ export const tvApi = {
   getPopular: () => getResults("tv/popular"),
   getAiringToday: () => getResults("tv/airing_today"),
   getTV: id => appendAndRetResults(`tv/${id}`, "append_to_response", "videos"),
-  searchTV: term => appendAndRetResults("search/tv", "query", term)
+  searchTV: term => appendAndRetResults("search/tv", "query", `${term}`)
 };

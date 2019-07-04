@@ -10,5 +10,7 @@ export const getResults = word => {
 export const appendAndRetResults = (url, paramName, param) => {
   const encodedParam = encodeURIComponent(param);
   const new_url = makeURL(url) + `&${paramName}=${encodedParam}`;
-  return getResults(new_url);
+  return fetch(new_url)
+    .then(res => res.json())
+    .catch(error => console.log(error));
 };

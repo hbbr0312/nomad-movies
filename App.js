@@ -23,7 +23,6 @@ export default class App extends Component {
   render() {
     const { loaded } = this.state;
     if (loaded) {
-      console.log("ready");
       return (
         <>
           <StatusBar barStyle="light-content" />
@@ -31,7 +30,6 @@ export default class App extends Component {
         </>
       );
     } else {
-      console.log("not yet");
       return (
         <AppLoading
           startAsync={this.loadAssets}
